@@ -1,7 +1,7 @@
 # aws-ec2
 A repo to store any useful AWS EC2 scripts
 
-## Instructions to install on linux web server
+## Instructions to install on an Amazon linux EC2 instance
 
 Run as su
 <code>sudo su</code>
