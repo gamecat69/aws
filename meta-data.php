@@ -16,6 +16,8 @@
   border: none;
   text-align: left;
   padding: 8px;
+  font-weight: normal;
+  font-family: Arial;
 }
 
 .tabler tbody tr:nth-child(even) {
@@ -35,7 +37,6 @@ body {
 	text-align: left;
 	color: #281B18;
 	background: #FFFFFF;
-	font-family: Arial, "Trebuchet MS", Helvetica, sans-serif;
 }
 
 h1 {
