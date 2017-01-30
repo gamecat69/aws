@@ -41,13 +41,6 @@ h1 {
 
 <?php
 
-/*
-sudo su
-yum install -y httpd git php
-cd /var/www/html
-git clone https://github.com/gamecat69/aws-ec2
-*/
-
 // Create array
 
 $info=array("ami-id",
@@ -65,6 +58,7 @@ $info=array("ami-id",
 "reservation-id",
 "security-groups");
 
+// Cycle through array
 $arrlength=count($info);
 
 for ($x=0; $x<$arrlength; $x++)
