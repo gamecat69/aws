@@ -1,12 +1,12 @@
 # aws-ec2
 A repo to store any useful AWS EC2 scripts
 
-# Instructions to install on linux web server
+## Instructions to install on linux web server
 
-<code>sudo su</code>
-<code>yum install -y httpd git php</code>
-<code>cd /var/www/html</code>
-<code>git clone https://github.com/gamecat69/aws-ec2</code>
+<addr>sudo su</addr>
+<addr>yum install -y httpd git php</addr>
+<addr>cd /var/www/html</addr>
+<addr>git clone https://github.com/gamecat69/aws-ec2</addr>
 
-# To access the page
+## To access the page
 http://<publicurl>/aws-ec2/meta-data.php
