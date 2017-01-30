@@ -80,7 +80,7 @@ for ($x=0; $x<$arrlength; $x++)
 	$path = "http://169.254.169.254/latest/meta-data/" . $info[$x]; 
 	$data = file_get_contents($path);
 	//echo "<span class=\"title\">", $info[$x], "</span><span class=\"dots\"> : </span><span class=\"info\">",$data, "</span><br/>\n";
-	echo "<tr><th>" , $info[$x] , "</th><th>" , $data "</th></tr>\n";
+	echo "<tr><th>" , $info[$x] , "</th><th>" , $data, "</th></tr>\n";
 }
 
 ?>
