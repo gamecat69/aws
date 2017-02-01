@@ -21,7 +21,7 @@ h1 {
 
 <?php
 
-//	Get data from curl
+//	Get data and print to screen
 //	function nl2br() preserves the line breaks in the return from curl
 $data = file_get_contents("http://169.254.169.254/latest/dynamic/instance-identity/document");
 echo "<span>", nl2br($data), "</span>";
