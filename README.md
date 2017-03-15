@@ -15,5 +15,6 @@ Switch to the default apache webroot
 Clone the files to the default webroot
 <code>git clone https://github.com/gamecat69/aws-ec2</code>
 
-## Example to access a page in a browser
+## Example to access a page in a browser after git clone
 http://--publicurl--/aws-ec2/meta-data.php
+
