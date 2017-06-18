@@ -1,2 +1,3 @@
-package.zip
+*.zip
 .DS_Store
+archive/
