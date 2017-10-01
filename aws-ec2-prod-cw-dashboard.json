@@ -1,0 +1,100 @@
+{
+    "widgets": [
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 8,
+            "width": 24,
+            "height": 6,
+            "properties": {
+                "view": "timeSeries",
+                "stacked": false,
+                "metrics": [
+                    [ "AWS/EC2", "CPUUtilization", "AutoScalingGroupName", "awseb-e-qk4cq7qep4-stack-AWSEBAutoScalingGroup-1P2BNCYY2OGFU" ],
+                    [ ".", "NetworkIn", ".", ".", { "yAxis": "right" } ]
+                ],
+                "region": "eu-central-1",
+                "title": "Web Servers"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 2,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "view": "timeSeries",
+                "stacked": true,
+                "metrics": [
+                    [ "AWS/ELB", "Latency", "LoadBalancerName", "awseb-e-q-AWSEBLoa-2UA9RK6PPTM6", { "stat": "Sum", "yAxis": "left", "color": "#9467bd" } ]
+                ],
+                "region": "eu-central-1",
+                "period": 300,
+                "title": "ELB Latency"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 2,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "view": "timeSeries",
+                "stacked": false,
+                "metrics": [
+                    [ "AWS/RDS", "NetworkTransmitThroughput", "DBInstanceIdentifier", "aa1hounrdrxa836", { "yAxis": "right" } ],
+                    [ ".", "CPUUtilization", ".", ".", { "yAxis": "left" } ],
+                    [ ".", "DiskQueueDepth", ".", ".", { "yAxis": "right" } ]
+                ],
+                "region": "eu-central-1",
+                "title": "Database",
+                "period": 300
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 0,
+            "width": 24,
+            "height": 2,
+            "properties": {
+                "markdown": "\n![Operations](http://www.bahrain.bh/wps/contenthandler/!ut/p/digest!nGX0sx3-UYsBsTPlf5k1tQ/dav/fs-type1/themes/PortalPlusMain/images/logo_ega_bahrain.png)\n"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 14,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "view": "timeSeries",
+                "stacked": true,
+                "metrics": [
+                    [ "AWS/ELB", "HTTPCode_ELB_5XX", "LoadBalancerName", "awseb-e-q-AWSEBLoa-2UA9RK6PPTM6", { "stat": "Sum", "color": "#d62728" } ]
+                ],
+                "region": "eu-central-1",
+                "period": 300,
+                "title": "ELB HTTP 5XX (Internal Server) Errors"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 14,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "view": "timeSeries",
+                "stacked": true,
+                "metrics": [
+                    [ "System/Linux", "MemoryUtilization", "AutoScalingGroupName", "awseb-e-qk4cq7qep4-stack-AWSEBAutoScalingGroup-1P2BNCYY2OGFU", { "yAxis": "right" } ]
+                ],
+                "region": "eu-central-1",
+                "period": 300
+            }
+        }
+    ]
+}
