@@ -1,0 +1,18 @@
+c4b301d6985d:aws-ec2 anselln$ eb create aws-ec2-prod -db --vpc
+
+Enter an RDS DB username (default is "ebroot"): 
+Enter an RDS DB master password: 
+Retype password to confirm: 
+
+Enter the VPC ID: vpc-075b136f
+Do you want to associate a public IP address? (Y/n): n
+Enter a comma-separated list of Amazon EC2 subnets: subnet-0cf3e064,subnet-e1306d9b
+Enter a comma-separated list of Amazon ELB subnets: subnet-e0f1e288, subnet-eb366b91
+Enter a comma-separated list of Amazon VPC security groups: sg-aa09f0c0
+Do you want the load balencer to be public? (Select no for internal) (Y/n): y
+Enter a comma-separated list of database subnets: subnet-0cf3e064,subnet-e1306d9b
+
+
+#	Or....
+
+eb create aws-ec2-prod -db -db.engine mysql -db.i db.t2.micro -db.pass <password> -db.size 5 -db.user <username> -i t2.micro --vpc.dbsubnets subnet-0cf3e064,subnet-e1306d9b
