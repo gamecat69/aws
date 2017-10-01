@@ -15,4 +15,4 @@ Enter a comma-separated list of database subnets: subnet-0cf3e064,subnet-e1306d9
 
 #	Or....
 
-eb create aws-ec2-prod -db -db.engine mysql -db.i db.t2.micro -db.pass Pass.123 -db.size 5 -db.user ebuser -i t2.micro --vpc.dbsubnets subnet-0cf3e064,subnet-e1306d9b
+eb create aws-ec2-prod -db -db.engine mysql -db.i db.t2.micro -db.pass <password> -db.size 5 -db.user <username> -i t2.micro --vpc.dbsubnets subnet-0cf3e064,subnet-e1306d9b
