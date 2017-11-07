@@ -24,9 +24,11 @@ h1 {
 <?php
 
 $hostname = file_get_contents("http://169.254.169.254/latest/meta-data/hostname");
+#$ami-id   = file_get_contents("http://169.254.169.254/latest/meta-data/ami-id");
 $version = "2.0";
 
 echo "<span>Hostname:" , $hostname , "</span><br/>";
+#echo "<span>AMI-id:" , $ami-id , "</span><br/>";
 echo "<span>App version:" , $version , "</span><br/><br/>";
 
 echo "<a href=\"user-data.php\">user-data</a><br/>";
