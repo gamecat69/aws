@@ -1,3 +1,8 @@
 *.zip
 .DS_Store
 archive/
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
